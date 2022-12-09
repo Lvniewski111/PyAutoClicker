@@ -52,8 +52,6 @@ root.mainloop()
 
 
 
-
-
 """
 This code will create a GUI with two buttons, "Start" and "Stop". When the "Start" button is clicked,
 or the keyboard shortcut Ctrl+Shift+S is pressed, the auto clicker will perform 100 clicks with a delay of 0.5 seconds
