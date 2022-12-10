@@ -2,6 +2,13 @@ import tkinter as tk
 import time
 import pyautogui
 
+# define mouse tracking
+def getMousePosition():
+    pyautogui.displayMousePosition()
+    coords = pyautogui.position()
+    return coords
+
+
 # define the start_clicking function
 def start_clicking():
     global is_clicking
@@ -9,9 +16,8 @@ def start_clicking():
 
     # start a loop that simulates clicking every half second
     while is_clicking:
-        time.sleep(1.0)
-        pyautogui.displayMousePosition()
-        # (replace this with the actual code to click the mouse)
+        time.sleep(1.0)  
+        pyautogui.click()
         print("click!")
 
 # define the stop_clicking function
